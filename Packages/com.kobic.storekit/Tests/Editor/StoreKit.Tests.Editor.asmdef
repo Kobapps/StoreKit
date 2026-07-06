@@ -1,0 +1,40 @@
+{
+    "name": "StoreKit.Tests.Editor",
+    "rootNamespace": "StoreKit.Tests",
+    "references": [
+        "StoreKit.Runtime",
+        "StoreKit.VContainer",
+        "StoreKit.Zenject",
+        "UniTask",
+        "VContainer",
+        "Zenject",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [
+        {
+            "name": "jp.hadashikick.vcontainer",
+            "expression": "1.0.0",
+            "define": "STOREKIT_HAS_VCONTAINER"
+        },
+        {
+            "name": "com.svermeulen.extenject",
+            "expression": "1.0.0",
+            "define": "STOREKIT_HAS_ZENJECT"
+        }
+    ],
+    "noEngineReferences": false
+}

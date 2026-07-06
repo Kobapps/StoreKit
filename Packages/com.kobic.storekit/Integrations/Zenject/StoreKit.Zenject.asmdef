@@ -1,0 +1,24 @@
+{
+    "name": "StoreKit.Zenject",
+    "rootNamespace": "StoreKit.DI",
+    "references": [
+        "StoreKit.Runtime",
+        "UniTask",
+        "Zenject"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.svermeulen.extenject",
+            "expression": "1.0.0",
+            "define": "STOREKIT_HAS_ZENJECT"
+        }
+    ],
+    "noEngineReferences": false
+}

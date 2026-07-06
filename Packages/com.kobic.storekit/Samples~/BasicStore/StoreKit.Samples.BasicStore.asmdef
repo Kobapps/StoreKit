@@ -1,0 +1,18 @@
+{
+    "name": "StoreKit.Samples.BasicStore",
+    "rootNamespace": "StoreKit.Samples",
+    "references": [
+        "StoreKit.Runtime",
+        "UniTask",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

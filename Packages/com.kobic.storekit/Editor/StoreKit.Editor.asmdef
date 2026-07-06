@@ -1,0 +1,24 @@
+{
+    "name": "StoreKit.Editor",
+    "rootNamespace": "StoreKit.Editor",
+    "references": [
+        "StoreKit.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.purchasing",
+            "expression": "4.8.0",
+            "define": "STOREKIT_HAS_IAP"
+        }
+    ],
+    "noEngineReferences": false
+}

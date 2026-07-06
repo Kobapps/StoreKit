@@ -1,0 +1,24 @@
+{
+    "name": "StoreKit.VContainer",
+    "rootNamespace": "StoreKit.DI",
+    "references": [
+        "StoreKit.Runtime",
+        "UniTask",
+        "VContainer"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "jp.hadashikick.vcontainer",
+            "expression": "1.0.0",
+            "define": "STOREKIT_HAS_VCONTAINER"
+        }
+    ],
+    "noEngineReferences": false
+}

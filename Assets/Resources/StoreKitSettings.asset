@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05d388031c1725140bcdaea32507aa8f, type: 3}
+  m_Name: StoreKitSettings
+  m_EditorClassIdentifier: StoreKit.Runtime::StoreKit.StoreKitSettings
+  products: []
+  enableDefaultPopups: 1
+  showSuccessPopup: 1
+  showFailurePopup: 1
+  showCancelledPopup: 0
+  showDeferredPopup: 1
+  showRestorePopup: 1
+  popupTexts:
+    purchaseSuccessTitle: Purchase Complete
+    purchaseSuccessMessage: '{0} was purchased successfully.'
+    purchaseFailedTitle: Purchase Failed
+    purchaseFailedMessage: '{0}'
+    purchaseCancelledTitle: Purchase Cancelled
+    purchaseCancelledMessage: The purchase was cancelled.
+    purchaseDeferredTitle: Purchase Pending
+    purchaseDeferredMessage: Your purchase is awaiting approval.
+    restoreSuccessTitle: Restore Complete
+    restoreSuccessMessage: '{0} purchase(s) restored.'
+    restoreFailedTitle: Restore Failed
+    restoreFailedMessage: '{0}'
+    confirmButton: OK
+    simulatedConfirmTitle: Simulated Purchase
+    simulatedConfirmMessage: Buy {0} for {1}?
+    buyButton: Buy
+    cancelButton: Cancel
+  autoRetryInitialization: 1
+  maxInitializationRetries: 3
+  initializationRetryDelaySeconds: 2
+  useSimulatedStoreInEditor: 1
+  simulation:
+    askForConfirmation: 1
+    initializeDelaySeconds: 0.5
+    purchaseDelaySeconds: 0.5
+    failInitialization: 0
+    failPurchases: 0
+    purchaseFailure: 5
+    persistOwnership: 1
+  verboseLogging: 0

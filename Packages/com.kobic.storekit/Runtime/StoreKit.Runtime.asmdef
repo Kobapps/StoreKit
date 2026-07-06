@@ -1,0 +1,31 @@
+{
+    "name": "StoreKit.Runtime",
+    "rootNamespace": "StoreKit",
+    "references": [
+        "UniTask",
+        "UnityEngine.Purchasing",
+        "UnityEngine.Purchasing.Stores",
+        "Unity.Services.Core",
+        "Unity.InputSystem"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.purchasing",
+            "expression": "4.8.0",
+            "define": "STOREKIT_HAS_IAP"
+        },
+        {
+            "name": "com.unity.inputsystem",
+            "expression": "1.0.0",
+            "define": "STOREKIT_HAS_INPUTSYSTEM"
+        }
+    ],
+    "noEngineReferences": false
+}
