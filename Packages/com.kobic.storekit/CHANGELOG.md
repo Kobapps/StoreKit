@@ -3,6 +3,13 @@
 All notable changes to this package are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.3.0] - 2026-07-07
+
+### Changed
+- **Unity IAP is now an optional, unpinned dependency.** `com.unity.purchasing` is no longer declared in `package.json`, so the package never forces a specific (now-deprecated) Unity IAP version onto consumers. Add Unity IAP to your own project manifest at the version you want; the package uses its simulated store when IAP is absent.
+- The `STOREKIT_HAS_IAP` version define is bounded to the supported gateway range `[4.8, 5.0)` (was `>= 4.8.0`). This means installing **Unity IAP 5** no longer pulls the IAP 4.x gateway into compilation (which would fail) — the package compiles cleanly and falls back to the simulated store until dedicated IAP 5 support ships. IAP 4.8–4.x continues to use the real store on device.
+- Editor "no IAP" inspector hint clarified for the 4.x-vs-5 situation.
+
 ## [1.2.0] - 2026-07-06
 
 ### Added

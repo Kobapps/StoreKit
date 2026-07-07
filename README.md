@@ -36,9 +36,15 @@ This repository contains:
 
 (Or in the Package Manager: `+` → *Install package from git URL…* → `https://github.com/Kobapps/StoreKit.git?path=Packages/com.kobic.storekit`)
 
-`com.unity.purchasing` (Unity IAP) and `com.unity.ugui` resolve automatically as package dependencies. On Unity 6, IAP resolves to 4.15+.
+**3. Add Unity IAP — your choice of version (optional).** StoreKit does **not** pin a Unity IAP version, so it never forces a specific (and now deprecated) release on your project. For real purchasing on device, add Unity IAP yourself:
 
-> The package also compiles **without** Unity IAP — it then always uses the simulated store, which is handy in early development.
+```json
+"com.unity.purchasing": "4.15.1"
+```
+
+Currently StoreKit's device gateway targets the **Unity IAP 4.x** line (`[4.8, 5.0)`). If Unity IAP is absent — or you're on IAP 5, which isn't wired up yet — StoreKit compiles cleanly and uses its **simulated store**, so nothing breaks; you just don't get real purchasing until a supported IAP 4.x is present. (`com.unity.ugui` resolves automatically for the popups.)
+
+> This means you can develop the entire store flow with no Unity IAP installed at all, then add it when you're ready to test on device.
 
 ## Quick start
 

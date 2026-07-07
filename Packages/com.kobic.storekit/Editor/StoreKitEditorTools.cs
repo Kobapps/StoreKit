@@ -65,7 +65,7 @@ namespace StoreKit.Editor
             }
 
 #if !STOREKIT_HAS_IAP
-            EditorGUILayout.HelpBox("com.unity.purchasing is not installed — StoreKit will always use the simulated store. Install Unity IAP for device builds.", MessageType.Info);
+            EditorGUILayout.HelpBox("No supported Unity IAP (com.unity.purchasing 4.8–4.x) detected — StoreKit will always use the simulated store. Add Unity IAP to your project's manifest for device builds. (Unity IAP 5 support is not yet available; the 4.x line still works.)", MessageType.Info);
 #endif
 
             DrawDefaultInspector();

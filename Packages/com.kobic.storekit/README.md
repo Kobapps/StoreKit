@@ -18,13 +18,24 @@ AAA-quality, reliable wrapper around Unity IAP (`com.unity.purchasing`) for mobi
    ```json
    "com.kobic.storekit": "https://github.com/Kobapps/StoreKit.git?path=Packages/com.kobic.storekit"
    ```
-2. Dependencies resolved automatically: `com.unity.purchasing` (4.12+), `com.unity.ugui`.
-3. **UniTask** is required and must be added to your project manifest (git dependencies can't be declared by packages):
+2. **UniTask** is required and must be added to your project manifest (git dependencies can't be declared by packages):
    ```json
    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.5.11"
    ```
+3. `com.unity.ugui` resolves automatically (used by the default popups).
+4. **Unity IAP is optional and unpinned** — add it yourself when you want real device purchasing, at whatever version you choose:
+   ```json
+   "com.unity.purchasing": "4.15.1"
+   ```
 
-The package also compiles without `com.unity.purchasing` — it then always uses the simulated store (handy for early development).
+### Unity IAP versioning
+
+StoreKit deliberately does **not** declare `com.unity.purchasing` as a dependency, so it never locks your project to a specific (now-deprecated) IAP version. The device gateway targets the **Unity IAP 4.x** line (`[4.8, 5.0)`), selected via an asmdef version define:
+
+- **Supported IAP 4.x installed** → real Unity IAP is used on device.
+- **No IAP, or IAP 5 installed** → the package compiles cleanly and uses the **simulated store** (IAP 5 support is planned; the 4.x line still works today).
+
+So you can build and test the entire store flow with no Unity IAP installed, then add it for device builds.
 
 ## Quick start
 
