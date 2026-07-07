@@ -59,7 +59,9 @@ Currently StoreKit's device gateway targets the **Unity IAP 4.x** line (`[4.8, 5
 
 2. `await Store.InitializeAsync();` then `await Store.PurchaseAsync("id");` — in the Editor you get the simulated store (with confirmation/result popups); on device, real Unity IAP.
 3. For non-consumables on iOS, expose a Restore button calling `Store.RestorePurchasesAsync()`.
-4. Prefer dropping in MonoBehaviours? Extend `StoreControllerBase` (grant purchases, hook game flow) and `ProductControllerBase` (shop buttons) — see the **Basic Store** sample in the Package Manager.
+4. Prefer dropping in MonoBehaviours? Extend `StoreControllerBase` (grant purchases, hook game flow) and `ProductControllerBase` (shop buttons).
+
+**Want to see it running first?** Import the **Basic Store** sample (Package Manager → StoreKit → Samples → Basic Store), open `BasicStore.unity`, and press Play — a full demo shop drives the simulated store with zero setup, showing the controllers, popups, and restore flow end to end.
 
 ## Highlights
 

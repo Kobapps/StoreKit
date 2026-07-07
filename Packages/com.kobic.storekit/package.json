@@ -1,6 +1,6 @@
 {
   "name": "com.kobic.storekit",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "displayName": "StoreKit",
   "description": "AAA-quality Unity IAP wrapper for mobile. UniTask-based async API, works in the Editor with a simulated store, full product/purchase/restore support, default device popups (overridable), analytics hooks, and extendable store/product controllers. Unity IAP is an optional dependency — install whichever version you need (the package falls back to a simulated store when it is absent).",
   "unity": "2022.3",
@@ -23,7 +23,7 @@
   "samples": [
     {
       "displayName": "Basic Store",
-      "description": "Example store controller and product button built on StoreKit's extendable base controllers.",
+      "description": "A ready-to-run demo scene plus example store/product controllers built on StoreKit's extendable base classes. Press Play to shop against the simulated store.",
       "path": "Samples~/BasicStore"
     }
   ]

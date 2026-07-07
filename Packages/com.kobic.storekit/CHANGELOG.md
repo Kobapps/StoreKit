@@ -3,6 +3,14 @@
 All notable changes to this package are documented in this file.
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.4.0] - 2026-07-07
+
+### Added
+- **Basic Store sample now ships a runnable demo scene** (`BasicStore.unity`). Press Play and shop against the simulated store — no setup needed. It contains an `ExampleStoreController` and a `StoreDemo` bootstrap that configures a demo catalog (if the project has none), initializes the store, and builds a runtime uGUI shop (per-product Buy buttons, Restore, live status, event log).
+- `StoreDemo` and `DemoProductRow` sample scripts — `DemoProductRow` demonstrates `ProductControllerBase` wired from code (complementing `ExampleProductButton`, which wires it from the inspector).
+- `ExampleStoreController` now also grants a subscription product (`com.example.vip`).
+- Sample files carry stable `.meta` GUIDs so the scene's script references resolve correctly when the sample is imported via Package Manager.
+
 ## [1.3.0] - 2026-07-07
 
 ### Changed

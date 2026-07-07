@@ -11,9 +11,11 @@ namespace StoreKit.Samples
     {
         private const string CoinsKey = "example.coins";
         private const string NoAdsKey = "example.no_ads";
+        private const string VipKey = "example.vip";
 
         public int Coins => PlayerPrefs.GetInt(CoinsKey, 0);
         public bool NoAds => PlayerPrefs.GetInt(NoAdsKey, 0) == 1;
+        public bool Vip => PlayerPrefs.GetInt(VipKey, 0) == 1;
 
         protected override void GrantPurchase(PurchaseResult result)
         {
@@ -32,6 +34,10 @@ namespace StoreKit.Samples
                     PlayerPrefs.SetInt(NoAdsKey, 1);
                     break;
 
+                case "com.example.vip":
+                    PlayerPrefs.SetInt(VipKey, 1);
+                    break;
+
                 default:
                     Debug.LogWarning($"Unhandled product: {result.ProductId}");
                     break;
@@ -47,7 +53,7 @@ namespace StoreKit.Samples
 
         protected override void OnPurchaseSucceeded(PurchaseResult result)
         {
-            Debug.Log($"Purchase granted: {result.ProductId} (restored: {result.IsRestored}). Coins: {Coins}, NoAds: {NoAds}");
+            Debug.Log($"Purchase granted: {result.ProductId} (restored: {result.IsRestored}). Coins: {Coins}, NoAds: {NoAds}, Vip: {Vip}");
         }
 
         protected override void OnPurchaseFailed(PurchaseResult result)
