@@ -12,7 +12,6 @@
       "depth": 0,
       "source": "embedded",
       "dependencies": {
-        "com.unity.purchasing": "4.12.2",
         "com.unity.ugui": "1.0.0"
       }
     },
