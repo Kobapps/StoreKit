@@ -1,7 +1,7 @@
 # StoreKit — Unity IAP Wrapper
 
 [![Unity](https://img.shields.io/badge/Unity-2022.3%2B-black.svg)](https://unity.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](Packages/com.kobic.storekit/LICENSE.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](Packages/com.kobapps.storekit/LICENSE.md)
 
 AAA-quality, reliable wrapper around Unity IAP (`com.unity.purchasing`) for mobile games, with a UniTask async API, a fully simulated store for Editor development, default (overridable) device popups, analytics hooks, DI integrations (VContainer / Zenject), and drop-in extendable controllers.
 
@@ -17,7 +17,7 @@ if (result.Success)
 
 This repository contains:
 
-- **The package** — [`Packages/com.kobic.storekit`](Packages/com.kobic.storekit) (see its [README](Packages/com.kobic.storekit/README.md) for full documentation).
+- **The package** — [`Packages/com.kobapps.storekit`](Packages/com.kobapps.storekit) (see its [README](Packages/com.kobapps.storekit/README.md) for full documentation).
 - **A Unity 6 development project** hosting the package and its edit-mode test suite.
 
 ## Installation (into your own project)
@@ -31,10 +31,10 @@ This repository contains:
 **2. Add StoreKit** via git URL:
 
 ```json
-"com.kobic.storekit": "https://github.com/Kobapps/StoreKit.git?path=Packages/com.kobic.storekit"
+"com.kobapps.storekit": "https://github.com/Kobapps/StoreKit.git?path=Packages/com.kobapps.storekit"
 ```
 
-(Or in the Package Manager: `+` → *Install package from git URL…* → `https://github.com/Kobapps/StoreKit.git?path=Packages/com.kobic.storekit`)
+(Or in the Package Manager: `+` → *Install package from git URL…* → `https://github.com/Kobapps/StoreKit.git?path=Packages/com.kobapps.storekit`)
 
 **3. Add Unity IAP — your choice of version (optional).** StoreKit does **not** pin a Unity IAP version, so it never forces a specific (and now deprecated) release on your project. For real purchasing on device, add Unity IAP yourself:
 
@@ -76,13 +76,13 @@ Currently StoreKit's device gateway targets the **Unity IAP 4.x** line (`[4.8, 5
 | DI | `builder.RegisterStoreKit(...)` (VContainer), `Container.BindStoreKit(...)` (Zenject/Extenject) — optional, compile-gated |
 | Reliability | Init retry with backoff, double-tap guards, idempotent-grant flow, disposal-safe services |
 
-Full documentation: [package README](Packages/com.kobic.storekit/README.md) · [changelog](Packages/com.kobic.storekit/CHANGELOG.md)
+Full documentation: [package README](Packages/com.kobapps.storekit/README.md) · [changelog](Packages/com.kobapps.storekit/CHANGELOG.md)
 
 ## Working on this repository
 
-- Open the repo root with **Unity 6000.5+**. The package is embedded under `Packages/com.kobic.storekit` and editable in place.
+- Open the repo root with **Unity 6000.5+**. The package is embedded under `Packages/com.kobapps.storekit` and editable in place.
 - Tests: `Window > General > Test Runner > EditMode` — the suite runs against the simulated store gateway (no device or store account needed).
 
 ## License
 
-MIT — see [LICENSE](Packages/com.kobic.storekit/LICENSE.md).
+MIT — see [LICENSE](Packages/com.kobapps.storekit/LICENSE.md).

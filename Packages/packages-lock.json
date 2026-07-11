@@ -7,8 +7,8 @@
       "dependencies": {},
       "hash": "2e993ff18f28c931602a07292df0b0804eebef99"
     },
-    "com.kobic.storekit": {
-      "version": "file:com.kobic.storekit",
+    "com.kobapps.storekit": {
+      "version": "file:com.kobapps.storekit",
       "depth": 0,
       "source": "embedded",
       "dependencies": {

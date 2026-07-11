@@ -16,7 +16,7 @@ AAA-quality, reliable wrapper around Unity IAP (`com.unity.purchasing`) for mobi
 
 1. Add the package via git URL (or embed it in `Packages/`):
    ```json
-   "com.kobic.storekit": "https://github.com/Kobapps/StoreKit.git?path=Packages/com.kobic.storekit"
+   "com.kobapps.storekit": "https://github.com/Kobapps/StoreKit.git?path=Packages/com.kobapps.storekit"
    ```
 2. **UniTask** is required and must be added to your project manifest (git dependencies can't be declared by packages):
    ```json
